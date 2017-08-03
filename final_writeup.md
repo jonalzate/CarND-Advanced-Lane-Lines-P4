@@ -11,15 +11,7 @@
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
-[//]: # (Image References)
 
-[image1]: ./camera_cal/undistort_output.png "Undistorted"
-[image2]: ./test_images/test1.jpg "Road Transformed"
-[image3]: ./examples/binary_combo_example.jpg "Binary Example"
-[image4]: ./examples/warped_straight_lines.jpg "Warp Example"
-[image5]: ./examples/color_fit_lines.jpg "Fit Visual"
-[image6]: ./examples/example_output.jpg "Output"
-[video1]: ./project_video.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -55,7 +47,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 To apply a distortion correction to raw images I used the calibration matrix (mtx) and dist obtained from performing cv2
 calibrateCamera using the objpoints and imgpoints from ChessboardCorners. The result is displayed below:
 
-![undistorted_cal](./output_images/undistorted.png "Undistorted Img)
+![undistorted_cal](./output_images/undistorted_cal.png "Undistorted Img")
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
